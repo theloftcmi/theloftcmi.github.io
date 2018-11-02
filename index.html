@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<title>The Loft</title>
+	
+	</head>
+	<body>
+	
+		<!--Navigation-->
+		<div class="navbar">
+			<a href="#hero"><img src="images/logo.png" alt="The Loft" id="logo"></a>
+			<nav>
+				<ul>
+					<li><a href="#hero">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact" class="button-filled">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!--Hero-->
+		<section id="hero">
+			<div class="content">
+				<div class="container-reverse-hero" id="hero-content">
+					<div>
+						<h1>The Loft Campus Ministry</h1>
+						<p>A CMI Campus Ministry at ETSU</p>
+						<br>
+						<a href="#about" class="button-filled">Learn More</a>
+					</div>
+					<img src="images/logo.png" id="hero-logo">
+				</div>
+			</div>
+		</section>
+		
+		<!--About-->
+		<section id="about">
+			<div class="content">
+				<div class="container">
+					<div class="about-text">
+						<h2>What We Do</h2>
+						<p>
+						The Loft Campus Ministry meets at the campus center building in room 223 on 8 P.M. every thursday.
+						We gather on these nights to create friendships and together grow our knowledge of the Bible.
+						Everyone is welcome, food and drinks are typically provided at each meeting, so be our guest and visit with us, God bless!
+						</p>
+					</div>
+					
+					<img src="images/quad.jpg">
+					
+				</div>
+				<div class="container-reverse">
+					
+					<img src="images/biblestudy.jpg">
+					
+					<div class="about-text">
+						<h2>Why We Started</h2>
+						<p>
+						We started our Campus Ministry as a way to reach out to others and share the goodness of God's Word and show love to others, just as He called us to do!
+						For any questions, prayer requests, or any additional info contact us.
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		<section id="contact">
+			<div class="content">
+				<div class="container" id="contact-content">
+					<div class="container">
+						<div class="person">
+							<img src="images/heath.jpg">
+							<p>Something about heath</p>
+						</div>
+						<div class="person">
+							<img src="images/otherguy.jpg">
+							<p>Something about otherguy</p>
+						</div>
+					</div>
+					
+					<div id="form-holder">
+						<div id="form-header">
+							<h2>Contact Us</h2>
+						</div>
+						<form action="https://formspree.io/hratliff@etsu.edu" method="POST">
+								<input type="text" name="name" placeholder="Name" required>
+								<br>
+								<input type="email" name="_replyto" placeholder="Email" required>
+								<br>
+								<textarea name="message" placeholder="Message" required></textarea>
+								<br>
+								<input type="submit" value="Send">
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<p>The Loft Campus Ministry, 2018</p>
+		</footer>
+		
+		<script type="text/javascript">
+			$('a[href*="#"]').on('click', function (e) {
+				e.preventDefault();
+
+				$('html, body').animate({
+					scrollTop: $($(this).attr('href')).offset().top
+				}, 400, 'linear');
+			});
+		</script>
+	
+	</body>
+
+</html>
